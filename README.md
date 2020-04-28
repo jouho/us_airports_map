@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## Map of Airports in the United States
 
-You can use the [editor on GitHub](https://github.com/jouho/us_airports_map.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![](img/screenshot.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Project Description
 
-### Markdown
+This is an interactive web map that marks all the airports in the United States. The color of the airport icon indicates whether the airport has an air traffic control tower (ATCT). Red icon indicates that it has the ATCT and blue icon indicates that there is no ATCT. This map also divides the United States into each states and the color of each states indicates how many airports are there.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Data Source
+- `airports.geojson` contains all the airports in the United States. This data is converted from a shapefile, which was downloaded and unzipped from  https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile.
+- `us-states.geojson` is a geojson data file containing all the states' boundaries of the United States. This data is acquired from [Mike Bostock](http://bost.ocks.org/mike) of [D3](http://d3js.org/).
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jouho/us_airports_map.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### Acknowledgement
+This map is created by Jou Ho, and is made with reference to a Web Map Design tutorial found [here](https://github.com/jakobzhao/geog458/tree/master/labs/lab03).
